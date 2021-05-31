@@ -1,0 +1,40 @@
+1.Component
+    -là các thành phần giúp phân chia các UI (giao diện người dùng) thành các phân nhỏ 
+    để dễ dàng quản lý và tái sử dụng.
+    - Component chia là 2 loại : + FUNCTION Component 
+                                 + CLASS Component
+        +) Cấu trúc của 1 function Component : 
+            function ExpenseItem() {
+                return(
+                    <div>
+                        <h1> Tiêu đề </h1>
+                        <p> Content </p>
+                    </div>
+                );
+            }    
+            export default ExpenseItem();          
+
+        +) Cấu trúc của 1 class Component :     
+            class ExpenseItem extends React.Component {
+                render() {
+                    return(
+                    <div>
+                        <h1> Tiêu đề </h1>
+                        <p> Content </p>
+                    </div>
+                    );
+                }
+            }            
+            export default ExpenseItem();
+        
+        --> Bên thư mục gốc sẽ import các Component này
+
+        import React from 'react';
+        import ExpenseItem from './ExpenseItem';
+        
+        function App() {
+            return(
+                    <ExpenseItem></ExpenseItem>
+                    //Component giống như 1 khối block nên được viết như 1 thẻ tag
+            );
+        }
