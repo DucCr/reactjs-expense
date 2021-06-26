@@ -1,9 +1,0 @@
-
-
-
-- props là 1 object chứa các key là các thuộc tính của thẻ tag (Component)
-
--Dữ liệu đường truyền từ component cha cho component con, components con khi nhận
- được sẽ chỉ được đọc mà không thể thay đổi dữ liệu đó.
-
- -props chỉ có thể truyền được từ component cha xang component con
